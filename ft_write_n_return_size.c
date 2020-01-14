@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_put_parsed_str.c                                :+:      :+:    :+:   */
+/*   ft_write_n_return_size.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dhaouhao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/20 06:47:36 by dhaouhao          #+#    #+#             */
-/*   Updated: 2020/01/14 19:02:04 by dhaouhao         ###   ########.fr       */
+/*   Updated: 2020/01/14 20:11:43 by dhaouhao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-size_t	ft_put_parsed_str(char *str, va_list args)
+size_t	ft_write_n_return_size(char *str, va_list args)
 {
 	t_parse	parsed;
 	size_t	ret;

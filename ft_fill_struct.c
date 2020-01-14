@@ -6,7 +6,7 @@
 /*   By: dhaouhao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/20 06:43:32 by dhaouhao          #+#    #+#             */
-/*   Updated: 2020/01/14 00:05:59 by dhaouhao         ###   ########.fr       */
+/*   Updated: 2020/01/14 20:07:54 by dhaouhao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,6 @@ void	ft_fill_struct(va_list args, t_parse *parsed, char *str)
 			parsed->type = *str;
 		str++;
 	}
-	// printf("\n");
-	// printf("is_left %zu, is_0_filled %zu, is_width %zu, is_prec %zu, type %c\n", parsed->is_left, parsed->is_0_filled, parsed->is_width, parsed->is_prec, parsed->type);
-	// printf("\n");
 	free(tmp);
 }
 

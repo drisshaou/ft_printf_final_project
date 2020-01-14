@@ -6,12 +6,12 @@
 #    By: dhaouhao <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/12/24 02:13:23 by dhaouhao          #+#    #+#              #
-#    Updated: 2020/01/14 19:03:20 by dhaouhao         ###   ########.fr        #
+#    Updated: 2020/01/14 20:12:46 by dhaouhao         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS		= ft_atoi.c ft_putstr.c ft_fill_struct.c ft_set_prec.c \
-ft_write_c.c ft_put_parsed_str.c ft_set_width.c ft_write_diux.c \
+ft_write_c.c ft_write_n_return_size.c ft_set_width.c ft_write_diux.c \
 ft_ulltoa_base.c ft_strdup.c ft_write_p.c ft_substr.c ft_parse_str.c \
 ft_write_s.c ft_is_type.c ft_printf.c ft_strlen.c ft_isdigit.c ft_putchar.c
 

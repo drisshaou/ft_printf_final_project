@@ -6,7 +6,7 @@
 /*   By: dhaouhao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/11 23:31:38 by dhaouhao          #+#    #+#             */
-/*   Updated: 2020/01/14 19:11:47 by dhaouhao         ###   ########.fr       */
+/*   Updated: 2020/01/14 20:10:24 by dhaouhao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ typedef struct	s_parse
 int				ft_printf(const char *str, ...);
 size_t			ft_parse_str(const char *str, va_list args);
 int				ft_is_type(char c, const char *flags);
-size_t			ft_put_parsed_str(char *str, va_list args);
+size_t			ft_write_n_return_size(char *str, va_list args);
 void			ft_init_struct(t_parse *parsed);
 void			ft_fill_struct(va_list args, t_parse *parsed, char *str);
 char			*ft_set_prec(char *str, t_parse *parsed, va_list args);
