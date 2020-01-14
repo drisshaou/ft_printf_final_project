@@ -6,7 +6,7 @@
 /*   By: dhaouhao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/24 01:33:09 by dhaouhao          #+#    #+#             */
-/*   Updated: 2020/01/14 20:11:31 by dhaouhao         ###   ########.fr       */
+/*   Updated: 2020/01/14 20:30:47 by dhaouhao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 size_t	ft_parse_str(const char *str, va_list args)
 {
 	int		i;
-	char	*string;
+	int		j;
 	size_t	ret;
 
 	ret = 0;
@@ -27,14 +27,12 @@ size_t	ft_parse_str(const char *str, va_list args)
 			i++;
 		if (i > 0)
 		{
+			j = 0;
 			if (*str == '%' && ft_is_type(str[i], TYPES) && i++)
 				ret += ft_write_n_return_size(ft_substr(str, 1, i - 1), args);
 			else
-			{
-				string = ft_substr(str, 0, i);
-				ret += ft_putstr(string);
-				free(string);
-			}
+				while (j < i)
+					ret += ft_putchar(str[j++]);
 			str += i;
 		}
 	}
