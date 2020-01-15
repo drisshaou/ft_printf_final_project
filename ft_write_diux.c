@@ -6,7 +6,7 @@
 /*   By: dhaouhao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/24 01:29:06 by dhaouhao          #+#    #+#             */
-/*   Updated: 2020/01/14 19:12:54 by dhaouhao         ###   ########.fr       */
+/*   Updated: 2020/01/15 21:44:03 by dhaouhao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ char	*ft_get_nbr_base(char type, long nbr)
 		base = (type == 'x') ? "0123456789abcdef" : "0123456789ABCDEF";
 	else
 		base = "0123456789";
-	val = (type != 'X' && type != 'x' && nbr < 0) ? -nbr : nbr;
+	val = (nbr < 0) ? -nbr : nbr;
 	return (ft_ulltoa_base(val, base));
 }
 

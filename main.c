@@ -6,7 +6,7 @@
 /*   By: dhaouhao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/23 08:19:55 by dhaouhao          #+#    #+#             */
-/*   Updated: 2020/01/14 17:23:26 by dhaouhao         ###   ########.fr       */
+/*   Updated: 2020/01/15 21:43:05 by dhaouhao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -265,8 +265,8 @@ int main()
 	printf("\n\n----------HEXA----------\n");
 
 	printf("\n\n----------test35----------\n");
-	ft_printf("|%x|\n", -42);
-	printf("|%x|\n", -42);
+	ft_printf("|%x|\n", -1);
+	printf("|%x|\n", -1);
 
 	printf("\n\n----------test35 '----------\n");
 	// printf("|%lld|\n", (long long)ULLONG_MAX);
